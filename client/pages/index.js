@@ -10,6 +10,7 @@ class Index extends Component {
             <div>
                 {this.props.title}
                 basic page
+                commit test
             </div>
         )
     }
