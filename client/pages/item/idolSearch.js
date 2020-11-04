@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 
-class Index extends Component {
+class IdolSearch extends Component {
     constructor(props) {
         super(props);
     }
@@ -10,15 +10,14 @@ class Index extends Component {
         return (
             <Layout>
                 {this.props.title}
-                basic page
-                commit test
+            
             </Layout>
         )
     }
 }
 
-Index.getInitialProps = ({ query }) => {
+IdolSearch.getInitialProps = ({ query }) => {
     return query;
 }
 
-export default Index;
+export default IdolSearch;
