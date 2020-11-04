@@ -11,9 +11,14 @@ app.prepare().then(() => {
     const server = express();
 
     server.get('/', (req, res) => {
-
         const page = '/index'
         return app.render(req, res, page, { title: 'next' })
+    })
+
+    server.get('/idol', (req, res) => {
+        const page = '/item/idolSearch';
+        const id = { id: req.query.hash };
+        return app.render(req, res, page, id);
     })
 
     server.get('*', (req, res) => {
